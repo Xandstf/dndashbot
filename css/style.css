@@ -1385,7 +1385,8 @@ h2{
 		margin-top: -2vh;
 	}
 	.marginPhone{
-		margin-top: 2vh;;
+		margin-top: 2vh;
+		width: 25vh;
 	}
 	.header_area .menu_nav{
 		text-align: center;
