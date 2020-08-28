@@ -1398,7 +1398,7 @@ h2{
 		font-size: 2vh !important;
 	}
 	.offer-single__img.img-fluid{
-		width: 25vh !important;
+		width: 30vh !important;
 		padding-bottom: 20px;
 	}
 	.heroImg{
@@ -3000,7 +3000,6 @@ h2{
     left:-2px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(5px) !important;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
@@ -3014,13 +3013,11 @@ h2{
 }
 
 .glow-on-hover:active:after {
-	background: transparent;
-	filter: blur(5px) !important;
+    background: transparent;
 }
 
 .glow-on-hover:before {
-	opacity: 1;
-	filter: blur(5px) !important;
+    opacity: 1;
 }
 
 .glow-on-hover:after {
@@ -3032,13 +3029,11 @@ h2{
     background: #111;
     left: 0;
     top: 0;
-	border-radius: 30px;
-	filter: blur(5px) !important;
+    border-radius: 30px;
 }
 
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
-	100% { background-position: 0 0; }
-	
+    100% { background-position: 0 0; }
 }
