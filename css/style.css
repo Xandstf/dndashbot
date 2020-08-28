@@ -771,7 +771,7 @@ h2{
 
 @media (min-width: 1200px) {
 	.hero-banner {
-		padding: 265px 0 20px 0
+		padding: 220px 0 20px 0
 	}
 }
 
@@ -1369,7 +1369,10 @@ h2{
 		padding-top: 10px;
 		padding-right: 0px !important;
 	}
-	
+	.about__img{
+		text-align: center;
+		padding-right: 0px !important;
+	}
 	.hero-banner__content p, .hero-banner__content, .about__content p, .about__content, .solution__content{
 		text-align: center;
 		padding-right: 0px !important;
@@ -1385,7 +1388,7 @@ h2{
 		margin-top: -2vh;
 	}
 	.marginPhone{
-		margin-top: 2vh;
+		margin-top: 5vh;
 		width: 25vh !important;
 	}
 	.header_area .menu_nav{
@@ -1394,7 +1397,26 @@ h2{
 	.header_area .menu_nav a{
 		font-size: 2vh !important;
 	}
-	
+	.offer-single__img.img-fluid{
+		width: 30vh !important;
+		padding-bottom: 20px;
+	}
+	.heroImg{
+		width: 25vh !important;
+	}
+	.blocksApp{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.arrow-container {
+		padding-top: 80px !important;
+	}
+	.about__img{
+		text-align: center;
+	}
+}
+.about__img{
+	text-align: right;
 }
 .moreCommands{
 	margin-top: -4vh;
@@ -2915,4 +2937,104 @@ h2{
 .footer-area .footer-bottom .footer-social a i,
 .footer-area .footer-bottom .footer-social a span {
 	font-size: 14px
+}
+.arrow-container {
+	width: 15px;
+	padding-top: 120px;
+	padding-bottom: 10px;
+	/* cubic-bezier-easing = sine / mehr Beispiele: https://easings.net/ */
+	animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	cursor: pointer;
+	height: 20px;
+	margin: auto;
+  }
+  
+  .arrow-down {
+	  margin: auto !important;
+	height: 6px;
+	background: white;
+	transform: rotate(45deg);
+	transform-origin: 0% 0%;
+	border-radius: 5px;
+  }
+  .arrow-down:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 100%;
+	border-radius: 5px;
+	background: white;
+	transform: rotate(-90deg);
+	transform-origin: 0% 100%;
+  }
+  
+  @keyframes bounce {
+  50% {
+	  transform: translateY(-10px);
+	}
+  }
+  
+
+
+
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #0f0a21;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 30px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
