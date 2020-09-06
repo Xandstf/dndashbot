@@ -3103,7 +3103,7 @@ h2{
 	align-items: center;
 	justify-content: center;
   }
-
+/*
   .buttonCard::before {
   	content: '';
 	border-radius: 1000px;
@@ -3130,7 +3130,7 @@ h2{
 	transform: translate(-50%, -50%);
 	animation: ring 1.5s infinite;
   }
-  
+  */
   @keyframes ring {
 	0% {
 	  width: 30px;
