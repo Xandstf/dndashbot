@@ -13,7 +13,10 @@ body {
 	font-weight: 400;
 	line-height: 1.667
 }
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -975,9 +978,10 @@ h2{
 	margin-bottom: 0
 }
 
-.offer-single__content:hover {
+.cardGeral:hover {
 	background: #fff;
-	box-shadow: 0px 10px 20px 0px rgba(33, 20, 106, 0.1)
+	box-shadow: 0px 10px 20px 0px rgba(33, 20, 106, 0.1);
+	transition: all 0.3s ease 0s;
 }
 
 .offer-single__icon {
@@ -1411,6 +1415,13 @@ h2{
 	}
 	.about__img{
 		text-align: center;
+	}
+	.commandSectionCards{
+		padding: 0 4% 0 4%;
+	}
+	.muitoMais{
+		padding-top: 3vh;
+		font-size: 6vh !important;
 	}
 }
 .about__img{
@@ -3203,6 +3214,8 @@ h2{
 	display: block;
 	animation: bottomBubbles ease-in-out 0.75s forwards;
   }
+
+  
   
   @keyframes topBubbles {
 	0% {
@@ -3228,3 +3241,90 @@ h2{
 	  background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
 	}
   }
+
+
+
+
+  .collapsible {
+	background-color: #e7ebee;
+	color: #444;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+	background-color: #caced1 !important;
+	transition: all 0.5s;
+  }
+  .commandContent {
+	padding: 0 18px;
+	background-color: #e7ebee;
+	color:rgb(0, 0, 0);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
+
+  
+  /*btn_background*/
+.effect01 {
+	color: #FFF;
+	background-color: #e7ebee;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+  }
+  .effect01:hover {
+	background-color: #caced1;
+  }
+  
+  /*btn_text*/
+  .effect01 span {
+	transition: all 0.2s ease-out;
+	z-index: 2;
+  }
+  .effect01:hover span{
+	letter-spacing: 0.13em;
+	color: #333;
+  }
+  
+  /*highlight*/
+  .effect01:after {
+	background: #caced1;
+	content: "";
+	height: 155px;
+	left: -75px;
+	opacity: .8;
+	position: absolute;
+	top: -50px;
+	-webkit-transform: rotate(35deg);
+			transform: rotate(35deg);
+	width: 50px;
+	transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);/*easeOutCirc*/
+	z-index: 1;
+  }
+  .effect01:hover:after {
+	background: #caced1;
+	opacity: 0;
+	left: 120%;
+	-webkit-transform: rotate(40deg);
+			transform: rotate(40deg);
+  }
+
+  .containerBtn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #FFF;
+	width: auto;
+  }
+
+  .muitoMais{
+	  padding-top: 4vh;
+	  font-size: 10vh;
+  }
+  
